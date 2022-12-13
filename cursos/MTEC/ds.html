@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../../content/Bootstrap/css/bootstrap.css">
+
+    <!--Menu-->
+    <link rel="stylesheet" href="../../style/menu.css">
+
+    <!--Footer-->
+    <link rel="stylesheet" href="../../style/footer.css">
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="../../style/cursos.css">
+
+    <!--MODAL-->
+    <link rel="stylesheet" href="../../style/modal-cursos.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+
+    <!--Normalize CSS-->
+    <link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+
+    <!--Compatibilidade-->
+    <!--[if IE]>
+         <script src="https://cdnjs.cloudflare.com/ajaz/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <! [endif] -->   
+
+
+    <title>Desenvolvimento de Sistemas - Etec de Vila Formosa</title>
+</head>
+<body class="no-js">
+<!--Início do Menu-->
+<header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="area-menu container-fluid"> 
+        <a id="go" href="../../index.html"><img id="go" src="../../imagens/logoevf.png" alt=""></a>  
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+            
+            <div class="dropdown">
+              <li class="nav-item"><a class="nav-link" href="#">Cursos<img src="../../imagens/seta.png" class="icone"></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <!-- MultiLevel-MTEC Start-->
+                    <li class="dropdown dropend">
+                      <a class="dropdown-item dropdown-first-link" href="#">MTEC<img src="../../imagens/direita.png" class="icone"></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-first-link" href="ds.html">Desenvolvimento de Sistemas</a></li>  
+                            <div class="links">         
+                                <li><a class="dropdown-item" href="rh.html">Recursos Humanos</a></li>
+                                <li><a class="dropdown-item" href="meioambiente.html">Meio Ambiente</a></li>
+                                <li><a class="dropdown-item" href="info.html">Informática</a></li>
+                                <li><a class="dropdown-item" href="adm.html">Administração</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- MultiLevel-METEC End-->
+                    
+                    <!-- MultiLevel-EAD Start-->
+                    <li class="dropdown dropend">
+                    <a class="dropdown-item dropdown-first" href="#">EAD<img src="../../imagens/direita.png" class="icone"></a>
+                        <ul class="dropdown-menu">        
+                            <div class="sub-links"> 
+                                <li><a class="dropdown-item dropdown-first-sublink" href="../EAD/comercioEAD.html">Comércio</a></li>     
+                                <li><a class="dropdown-item" href="../EAD/gestProjetosEAD.html">Gestão De Projetos</a></li>
+                                <li><a class="dropdown-item" href="../EAD/guiaTurismoEAD.html">Guia De Turismo</a></li>
+                                <li><a class="dropdown-item" href="../EAD/secretariadoEAD.html">Secretariado</a></li>
+                                <li><a class="dropdown-item" href="../EAD/transImobiEAD.html">Transações Imobiliárias</a></li>
+                                <li><a class="dropdown-item" href="../EAD/admEAD.html">Administração</a></li>
+                                <li><a class="dropdown-item" href="../EAD/dsEAD.html">Desenvolvimento de sistemas</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- MultiLevel-EAD End-->
+                </ul>
+              </li>
+            </div>
+
+            <!-- Início Modal -->
+            <li style="cursor: pointer">
+              <a id="myLink" class="menu-link">Fale Conosco</a>
+                <div id="myModal" class="modal menu-link">   
+                    <!-- Modal content -->
+                    <div class="modal-content menu-link">
+                        <span class="close">&times;</span>
+                        <form action="../../mensagens/inserir.php" enctype="multipart/form-data" method="post">
+                            <p>Nome:</p><br />
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
+                            <p>E-mail:</p><br />
+                            <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
+                            <p>Assunto:</p><br />
+                            <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
+                            <p>Mensagem:</p> <br>
+                            <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br />
+                            <input type="submit" /><br />
+                        </form>
+                    </div>
+                </div>
+            </li>
+            <!-- Fim Modal -->
+
+            <li class="nav-item"><a class="nav-link" href="../../professores/pagprof.html">Nossos Professores</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://nsa.cps.sp.gov.br/">NSA</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../login/index.php">Login</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Fim do Menu-->
+
+<main>
+    <section class="parallax-ds">
+        <h1>Desenvolvimento de Sistemas (M-Tec)</h1>
+        <p>Full Stack, Apps & Banco de dados</p>
+        <p>Curso Técnico integrado com o Ensino Médio</p>
+    </section>
+    
+    <div class="cursos">
+        <section class="sobre">
+            <b><h2 id="titleh">O Ensino médio</h2></b>
+            <p class="text-curso">Nesta modalidade de ensino, baseada na Lei nº 13.415/17, o aluno cursará o 
+            Ensino Médio estruturado em conjunto com a formação de Técnico em Desenvolvimento, 
+            numa jornada de até 30 aulas semanais (até 6 aulas diárias), em cada uma das 3 séries. 
+            Ao final do curso, o aluno terá concluído o Ensino Médio e obterá, também, o diploma de 
+            Técnico em Desenvolvimento de Sistemas, com validade nacional.<p>
+            </p><br><br>
+            <h2 id="titleh">O Curso</h2>
+            <p class="text-curso">
+                <b>O TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS</b> é o profissional que analisa e projeta sistemas. 
+                    Constrói, documenta, realiza testes e mantém sistemas de informação. Utiliza ambientes de 
+                    desenvolvimento e linguagens de programação específica. Modela, implementa e mantém bancos de dados.
+            </p>
+            <p class="text-curso"><b>Eixo Tecnológico: </b> Informação e Comunicação</p>
+        </section>
+
+        <section class="habilidades">
+            <h2 id="titleh">Você será capaz de:</h2>
+
+            <p class="text-capaz" > • Criar aplicativos;</p>
+            <p class="text-capaz"> • Desenvolver sistemas;</p>
+            <p class="text-capaz"> • Gerenciar softwares;</p>
+            <p class="text-capaz"> • Organizar projetos;</p>
+            <p class="text-capaz"> • Efetuar o planejamento estratégico;</p>
+        </section>
+    </div>
+
+</div>
+        <div id="informacoes">
+            <section class="competencias">
+                <h2>Matriz Curricular</h2>
+                <h3>-1600 horas/aula</h3>
+                <details class="infos">
+                    <summary>1º Ano</summary>
+                    <div class="grade">
+                        <button  onclick="acao()" class="btn">
+                            <span class="grade-span">
+                                <p class="span">Programação Mobile</p>
+                            </span>
+                        </button>
+                            <div class="modal-info">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                                <div onclick="fechar()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                
+                    </div>
+                <button  onclick="acao2()" class="btn2">
+                    <span class="grade-span">
+                        Programação web
+                    </span>
+                </button>
+                    <div class="modal-info2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                        <div onclick="fechar2()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                    </div>
+                <button  onclick="acao3()" class="btn3">
+                    <span class="grade-span">
+                        FUNDAMENTOS da Informática
+                    </span>
+                </button>
+                    <div class="modal-info3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                        <div onclick="fechar3()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                    </div>
+
+                <button  onclick="acao4()" class="btn4">
+                    <span class="grade-span">
+                        APS
+                    </span>
+                </button>
+                    <div class="modal-info4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                        <div onclick="fechar4()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                    </div>
+
+                <button  onclick="acao5()" class="btn5">
+                    <span class="grade-span">
+                        APS
+                    </span>
+                </button>
+                    <div class="modal-info5">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                     <div onclick="fechar5()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                    </div>
+
+                <button  onclick="acao4()" class="btn4">
+                    <span class="grade-span">
+                        APS
+                    </span>
+                </button>
+                    <div class="modal-info4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsam in inventore! Tempore eaque ratione doloribus consequuntur, adipisci reiciendis eveniet consequatur tenetur cumque nisi, quis deserunt ducimus enim magnam.</p>
+                        <div onclick="fechar4()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                    </div>                    
+              </div>
+            </details>
+            <details>
+                <summary>2º Ano</summary>
+                <div class="grade">
+                    <button  onclick="acao7()" class="btn7">
+                        <span class="grade-span">
+                            APS
+                        </span>
+                    </button>
+                        <div class="modal-info7">
+                            <p>7</p>
+                            <div onclick="fechar7()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                        </div>
+                    <button  onclick="acao8()" class="btn8">
+                        <span class="grade-span">
+                            APS
+                        </span>
+                    </button>
+                        <div class="modal-info8">
+                            <p>8</p>
+                            <div onclick="fechar8()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                        </div>
+                        <button  onclick="acao9()" class="btn9">
+                            <span class="grade-span">
+                                APS
+                            </span>
+                        </button>
+                            <div class="modal-info9">
+                                <p>9</p>
+                                <div onclick="fechar9()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                            </div>
+                            <button  onclick="acao10()" class="btn10">
+                                <span class="grade-span">
+                                    APS
+                                </span>
+                            </button>
+                                <div class="modal-info10">
+                                    <p>10</p>
+                                    <div onclick="fechar10()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                                </div>
+                                <button  onclick="acao11()" class="btn11">
+                                    <span class="grade-span">
+                                        APS
+                                    </span>
+                                </button>
+                                    <div class="modal-info11">
+                                        <p>11</p>
+                                        <div onclick="fechar11()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                                    </div>
+                                    <button  onclick="acao12()" class="btn12">
+                                        <span class="grade-span">
+                                            APS
+                                        </span>
+                                    </button>
+                                        <div class="modal-info12">
+                                            <p>12</p>
+                                            <div onclick="fechar12()" class="fechar"><img src="../../imagens/x.png" alt=""></div>
+                                        </div>
+                        
+                    </details>
+                    </div>
+                
+                
+            </section>
+        </div>
+</main>
+
+
+  <!--Início Footer-->
+  <div>
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-1 my-5">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <img src="../../imagens/logorodape.png" class="logo-rodape" style="width: 130px; height: 65px;">
+        </a>
+      </div>
+  
+      <div class="col mb-2">
+        <h2>Biblioteca</h2>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><p>Segundas/Quartas/Sextas:8h às 17h</p></li>
+          <li class="nav-item mb-2"><p>Terças/Quintas:12h às 21h</p></li>
+        </ul>
+      </div>
+
+      <div class="col mb-2">
+        <h2>Secretaria</h2>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><p>De segunda a sexta:</p></li>
+          <li class="nav-item mb-2"><p>Manhã 9:30h às 12h</p></li>
+          <li class="nav-item mb-2"><p>Tarde: 14h às 16h</p></li>
+          <li class="nav-item mb-2"><p>Noite: 18h às 20h</p></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-2">
+        <h2>Etec Vila de Formosa</h2>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><p>Jardim Vila Formosa - <p>São Paulo Rua Bactória, 38</p></li>
+        </ul>
+      </div>
+      
+      <div class="redes mb-2">
+        <ul class="redes">
+                <a href="https://www.facebook.com/etecdevilaformosaevf/" target="_blank">
+            <li class="nav-item mb-2"><i class="fab fa-facebook-f"></i></li></a>
+                <a href="https://twitter.com/etecvf" target="_blank">
+            <li class="nav-item mb-2"><i class="fab fa-twitter"></i></li></a>
+                <a href="https://www.instagram.com/etec_vilaformosa/" target="_blank">   
+            <li class="nav-item mb-2"><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.youtube.com/channel/UCJdKGvtOzDmdf5qhX6I7f1Q" target="_blank">  
+            <li class="nav-item mb-2"><i class="fab fa-youtube"></i></li><a>
+        </ul>
+      </div>
+    </footer>
+    <p class="address">&copy; Desenvolvido por EVF 2022</p>
+  </div>
+  <!--Fim Footer-->
+
+<script src="../../content/Bootstrap/js/bootstrap.bundle.js"></script>
+<script src="../../js/menu.js"></script>
+<script src="../../js/carousel.js"></script>
+<script src="../../js/modal.js"></script>
+<script src="../../js/script.js"></script>
+</body>
+</html>

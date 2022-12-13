@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../content/Bootstrap/css/bootstrap.css">
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/cursos.css">
+    <link rel="stylesheet" href="../style/card.css">
+    <link rel="stylesheet" href="professores/pagprof.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!--Menu-->
+    <link rel="stylesheet" href="../style/menu.css">
+
+    <!--Footer-->
+    <link rel="stylesheet" href="../style/footer.css">
+
+    <!--Normalize CSS-->
+    <link rel="stylesheet" type="text/css" href="../style/normalize.css">
+
+    <title>Página Coordenadores - Etec de Vila Formosa</title>
+
+    <style>
+      .main-text p{
+        font-size: 15px!important;
+      }
+
+      .link-card{
+        border-radius: 20px;
+        padding: 8px 50px;
+        background-color: #e4a803;
+        color: black!important;
+      }
+
+      .link-card:hover{
+        border-radius: 20px;
+        padding: 7px 49px;
+        background-color: black;
+        color: #e4a803!important;
+      }
+    </style>
+</head>
+<body class="no-js">
+<!--Início do Menu-->
+<header>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="area-menu container-fluid"> 
+      <a id="go" href="../index.html"><img id="go" src="../imagens/logoevf.png" alt=""></a>  
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          
+          <div class="dropdown">
+            <li class="nav-item"><a class="nav-link" href="#">Cursos<img src="../imagens/seta.png" class="icone"></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <!-- MultiLevel-MTEC Start-->
+                  <li class="dropdown dropend">
+                    <a class="dropdown-item dropdown-first-link" href="#">MTEC<img src="../imagens/direita.png" class="icone"></a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item dropdown-first-link" href="../cursos/MTEC/ds.html">Desenvolvimento de Sistemas</a></li>  
+                          <div class="links">         
+                              <li><a class="dropdown-item" href="../cursos/MTEC/rh.html">Recursos Humanos</a></li>
+                              <li><a class="dropdown-item" href="../cursos/MTEC/meioambiente.html">Meio Ambiente</a></li>
+                              <li><a class="dropdown-item" href="../cursos/MTEC/info.html">Informática</a></li>
+                              <li><a class="dropdown-item" href="../cursos/MTEC/adm.html">Administração</a></li>
+                          </div>
+                      </ul>
+                  </li>
+                  <!-- MultiLevel-METEC End-->
+                  
+                  <!-- MultiLevel-EAD Start-->
+                  <li class="dropdown dropend">
+                  <a class="dropdown-item dropdown-first" href="#">EAD<img src="../imagens/direita.png" class="icone"></a>
+                      <ul class="dropdown-menu">        
+                          <div class="sub-links"> 
+                              <li><a class="dropdown-item dropdown-first-sublink" href="../cursos/EAD/comercioEAD.html">Comércio</a></li>     
+                              <li><a class="dropdown-item" href="../cursos/EAD/gestProjetosEAD.html">Gestão De Projetos</a></li>
+                              <li><a class="dropdown-item" href="../cursos/EAD/guiaTurismoEAD.html">Guia De Turismo</a></li>
+                              <li><a class="dropdown-item" href="../cursos/EAD/secretariadoEAD.html">Secretariado</a></li>
+                              <li><a class="dropdown-item" href="../cursos/EAD/transImobiEAD.html">Transações Imobiliárias</a></li>
+                              <li><a class="dropdown-item" href="../cursos/EAD/admEAD.html">Administração</a></li>
+                              <li><a class="dropdown-item" href="../cursos/EAD/dsEAD.html">Desenvolvimento de sistemas</a></li>
+                          </div>
+                      </ul>
+                  </li>
+                  <!-- MultiLevel-EAD End-->
+              </ul>
+            </li>
+          </div>
+
+          <!-- Início Modal -->
+          <li style="cursor: pointer">
+            <a id="myLink" class="menu-link">Fale Conosco</a>
+              <div id="myModal" class="modal menu-link">   
+                  <!-- Modal content -->
+                  <div class="modal-content menu-link">
+                      <span class="close">&times;</span>
+                      <form action="../mensagens/inserir.php" enctype="multipart/form-data" method="post">
+                          <p>Nome:</p><br />
+                          <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
+                          <p>E-mail:</p><br />
+                          <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
+                          <p>Assunto:</p><br />
+                          <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
+                          <p>Mensagem:</p> <br>
+                          <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br />
+                          <input type="submit" /><br />
+                      </form>
+                  </div>
+              </div>
+          </li>
+          <!-- Fim Modal -->
+
+          <li class="nav-item"><a class="nav-link" href="pagprof.html">Nossos Professores</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://nsa.cps.sp.gov.br/">NSA</a></li>
+          <li class="nav-item"><a class="nav-link" href="../login/index.php">Login</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--Fim do Menu-->        
+    </header><!--Fim do Cabeçalho-->
+
+     <section class="parallax-prof">
+        <h1>Direção e Coordenação</h1><br>
+        <p>"A educação exige os maiores cuidados, pois tem influência sobre todas as vidas"</p>
+     </section>
+
+  <!--Início Cards -->
+  <div class="card-area">
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 my-5 justify-content-center">
+
+        <div class="col-md-2" style="width: 20rem;">
+          <div class="card">
+            <div class="img1"><img src="../imagens/lit.jpg" alt=""></div>
+            <div><img src="../imagens/coordenacao/anderson.PNG"  style="width: 150px; height: 150px; margin-top: -80px; margin-left: 65px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+            <div class="main-text">
+              <h2>Anderson</br> Buzato</h2>
+              <p>Coordenador pedagógico</p>
+              <a href="anderson.html" class="link-card">Sobre</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2" style="width: 20rem;">
+          <div class="card">
+            <div class="img1"><img src="../imagens/lit.jpg" alt=""></div>
+            <div><img src="../imagens/coordenacao/rode.jpg"  style="width: 150px; height: 150px; margin-top: -80px; margin-left: 65px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+            <div class="main-text">
+              <h2>Rodineha</br> Candido</h2>
+              <p>Coordenadora de Curso</p>
+              <a href="rode.html" class="link-card">Sobre</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2" style="width: 20rem;">
+          <div class="card">
+            <div class="img1"><img src="../imagens/diretora.jpeg" alt=""></div>
+            <div><img src="../imagens/coordenacao/danilo.JPG"  style="width: 150px; height: 150px; margin-top: -80px; margin-left: 65px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+            <div class="main-text">
+              <h2>Danilo</br> Bispo</h2>
+              <p>Coordenador de Curso</p>
+              <a href="danilo.html" class="link-card">Sobre</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2" style="width: 20rem;">
+          <div class="card">
+            <div class="img1"><img src="../imagens/diretora.jpeg" alt=""></div>
+            <div><img src="../imagens/coordenacao/agnaldo.jpg"  style="width: 150px; height: 150px; margin-top: -80px; margin-left: 65px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+            <div class="main-text">
+              <h2>Aguinaldo</br> Vicente</h2>
+              <p>Coordenador de Curso</p>
+              <a href="agnaldo.html" class="link-card">Sobre</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2" style="width: 20rem;">
+          <div class="card">
+            <div class="img1"><img src="../imagens/diretora.jpeg" alt=""></div>
+            <div><img src="../imagens/coordenacao/rose.PNG"  style="width: 150px; height: 150px; margin-top: -80px; margin-left: 65px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+            <div class="main-text">
+              <h2>Rosirene</br> Dutra</h2>
+              <p>Orientadora Educacional</p>
+              <a href="rose.html" class="link-card">Sobre</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2" style="width: 20rem;">
+          <div class="card">
+            <div class="img1"><img src="../imagens/diretora.jpeg" alt=""></div>
+            <div><img src="../imagens/coordenacao/rosa.jpg"  style="width: 150px; height: 150px; margin-top: -80px; margin-left: 65px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+            <div class="main-text">
+              <h2>Rosangela</br> Nardo</h2>
+              <p>Coordenadora de Curso</p>
+              <a href="rosangela.html" class="link-card">Sobre</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2" style="width: 20rem;">
+          <div class="card">
+            <div class="img1"><img src="../imagens/diretora.jpeg" alt=""></div>
+            <div><img src="../imagens/coordenacao/sheila.png"  style="width: 150px; height: 150px; margin-top: -80px; margin-left: 65px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+            <div class="main-text">
+              <h2>Sheila</br> Cristina</h2>
+              <p>Coordenadora de Curso</p>
+              <a href="sheila.html" class="link-card">Sobre</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2" style="width: 20rem;">
+          <div class="card">
+            <div class="img1"><img src="../imagens/diretora.jpeg" alt=""></div>
+            <div><img src="../imagens/coordenacao/grazi.jpg"  style="width: 150px; height: 150px; margin-top: -80px; margin-left: 65px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+            <div class="main-text">
+              <h2>Graziela</br> Santos</h2>
+              <p>Diretora</p>
+              <a href="grazi.html" class="link-card">Sobre</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2" style="width: 20rem;">
+          <div class="card">
+            <div class="img1"><img src="../imagens/diretora.jpeg" alt=""></div>
+            <div><img src="../imagens/coordenacao/sergio.PNG"  style="width: 150px; height: 150px; margin-top: -80px; margin-left: 65px; border-radius: 50%; box-shadow: 0 0 2.0em black;"></div>
+            <div class="main-text">
+              <h2>Antônio</br> Sérgio</h2>
+              <p>Coordenador de Curso</p>
+              <a href="sergio.html" class="link-card">Sobre</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!--Fim Cards -->
+
+</section><!--Fim da fileira 2-->
+
+ <!--Início Footer-->
+ <div>
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-1 my-5">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <img src="../imagens/logorodape.png" class="logo-rodape" style="width: 130px; height: 65px;">
+      </a>
+    </div>
+
+    <div class="col mb-2">
+      <h2>Biblioteca</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><p>Segundas/Quartas/Sextas:8h às 17h</p></li>
+        <li class="nav-item mb-2"><p>Terças/Quintas:12h às 21h</p></li>
+      </ul>
+    </div>
+
+    <div class="col mb-2">
+      <h2>Secretaria</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><p>De segunda a sexta:</p></li>
+        <li class="nav-item mb-2"><p>Manhã 9:30h às 12h</p></li>
+        <li class="nav-item mb-2"><p>Tarde: 14h às 16h</p></li>
+        <li class="nav-item mb-2"><p>Noite: 18h às 20h</p></li>
+      </ul>
+    </div>
+
+    <div class="col mb-2">
+      <h2>Etec Vila de Formosa</h2>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><p>Jardim Vila Formosa - <p>São Paulo Rua Bactória, 38</p></li>
+      </ul>
+    </div>
+    
+    <div class="redes mb-2">
+      <ul class="redes">
+              <a href="https://www.facebook.com/etecdevilaformosaevf/" target="_blank">
+          <li class="nav-item mb-2"><i class="fab fa-facebook-f"></i></li></a>
+              <a href="https://twitter.com/etecvf" target="_blank">
+          <li class="nav-item mb-2"><i class="fab fa-twitter"></i></li></a>
+              <a href="https://www.instagram.com/etec_vilaformosa/" target="_blank">   
+          <li class="nav-item mb-2"><i class="fab fa-instagram"></i></li></a>
+              <a href="https://www.youtube.com/channel/UCJdKGvtOzDmdf5qhX6I7f1Q" target="_blank">  
+          <li class="nav-item mb-2"><i class="fab fa-youtube"></i></li><a>
+      </ul>
+    </div>
+  </footer>
+  <p class="address">&copy; Desenvolvido por EVF 2022</p>
+</div>
+<!--Fim Footer-->
+
+    <!--Compatibilidade-->
+    <!--[if IE]>
+         <script src="https://cdnjs.cloudflare.com/ajaz/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <! [endif] -->
+</body>
+</html>
+<script src="/content/Bootstrap/js/bootstrap.bundle.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="../js/menu.js"></script>
+<script src="js/modal.js"></script>

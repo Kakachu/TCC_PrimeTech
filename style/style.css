@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    color: rgb(0, 0, 0)
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffffff;
+    margin: 5% auto;
+    /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn {
+    border: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #050A31;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#myBtn:hover {
+    transition: border ease-in 0.15s, color ease-in 0.15s;
+    color: #a60000;
+    border-top: 4px solid #a60000;
+}
+
+form {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin: 10px 0px 0px 20px;
+}
+
+form p {
+    padding-top: 15px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+}
+
+form input[type=submit] {
+    background-color: #e4a803;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid #e4a803;
+    height: 50px;
+    width: 240px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+form input:focus,
+form textarea:focus {
+    background-color: wheat;
+}
+
+#mensagem {
+    border-radius: 20px;
+    width: 700px;
+    height: 180px;
+    border: 1px solid #FDD16E;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#nome {
+    border: 1px solid #FDD16E;
+    border-radius: 20px;
+    padding: 15px;
+    width: 250px;
+}
+
+#email {
+    border: 1px solid #FDD16E;
+    border-radius: 20px;
+    padding: 15px;
+    width: 250px;
+}
+
+#assunto {
+    border: 1px solid #FDD16E;
+    border-radius: 20px;
+    padding: 15px;
+    width: 250px;
+}
+
+/*fim formatação do menu*/
+
+
+/* Main Início */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+main h1 {
+    font-family: 'Arvo';
+    color: #e4a803;
+    margin-bottom: 30px;
+    font-size: 40px!important;
+    margin-top: 40px;
+}
+
+main p {
+    font-family: 'Source Sans Pro';
+    text-align: justify;
+    color: black;
+    text-indent: 2px;
+    font-size: 1em;
+    line-height: 2em;
+}
+/* Main Fim */
+
+
+
+/*Início da Galeria*/
+
+.galeria {
+    width: 100vw;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens-galeria {
+    margin-bottom: 50px;
+    width: 950px;
+    height: 700px;
+    padding-top: 100px;
+    background: rgb(255, 255, 255);
+}
+
+.lightwidget__btn {
+    background-color: yellow;
+    border: orange;
+    color: #efefee;
+}
+
+/*Fim da Galeria*/
+
+/*Inicio da formatacao da area dos depoimentos*/
+.depoimentos img{
+    margin-left: 45px;
+  }
+  
+  hr.depoimentos{
+    border: solid 2px #e4a803!important;
+  }
+  
+  .depoimentos p{
+      font-size: 15px;
+      font-family: 'Source Sans Pro';
+      color: #858585;
+      text-align: center;
+      font-style: italic;
+      line-height: 130%;
+  }
+  
+  .depoimentos h4{
+      font-size: 20px;
+      font-family: Comic Sans MS, Comic Sans, cursive;
+      color: #3d3d3d;
+      text-align: center;
+  }
+
+/*Fim da formatacao da area dos depoimentos*/

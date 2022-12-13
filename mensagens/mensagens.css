@@ -1,0 +1,19 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    font-family: arial;
+    margin: 25px;
+    display: inline-block;
+}
+
+.btnExcluir{
+    position: relative;
+    top: 0;
+    right:  0;
+}
+.btnExcluir img{
+    width:20px;
+    height:20px;
+}

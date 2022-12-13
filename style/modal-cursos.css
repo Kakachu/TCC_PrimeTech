@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+
+.competencias {
+    width: 60%;
+    max-width: 600px;
+    float: left;
+    margin: 120px;
+}
+
+.competencias h2{
+    font-size: 2.5em;
+    font-family: 'Arvo';
+}
+
+.competencias h3{
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro';
+}
+
+.competencias details{
+    width: 1000px;
+    margin: 15px auto;
+}
+
+details.infos{
+    width: 1000px;
+    margin: 15px auto;
+}
+.competencias details summary {
+    color: white;
+    background-color: #e4a803;
+    border: 1px solid #e4a803;
+    font-family: 'arvo';
+    font-size: 24px;
+    padding: 1%;
+}
+
+.competencias details[open] summary ~ *{
+    animation: sweep 250ms ease-in-out;
+    animation-duration: 800ms;
+}
+
+@keyframes sweep {
+    from{opacity: 1;}
+    from{opacity: 0;}
+  }
+
+.competencias details summary:hover{
+    color: black;
+    background-color: #e4a803;
+}
+
+.competencias summary img{
+    float: right;
+    padding-top: 10px;
+}
+
+.grade{
+    margin-right: -1px;
+    padding: 30px 0px 90px;
+    display: inline;
+}
+
+.grade-span{
+    display: table-cell;
+    padding: 0px 30px;
+}
+
+p.span{
+    font-family: 'Source Sans Pro';
+}
+
+@keyframes animate{
+    from{opacity: 1;}
+    from{opacity: 0;}
+}
+
+
+.fechar img{
+    padding-top:8px;
+    width: 15px;
+    height: 15px;
+    
+}
+
+.btn,
+.btn2,
+.btn3,
+.btn4,
+.btn5,
+.btn6,
+.btn7,
+.btn8,
+.btn9,
+.btn10,
+.btn11,
+.btn12{
+    background:linear-gradient(#808080,#717171) ;
+    color: #ffffff;
+    cursor: pointer;
+    display: -ms-inline-flexbox;
+    display: inline-grid;
+    font: 16px/24px;
+    outline: none;
+    padding: 30px 0 ;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 24.6%;
+    margin: 20px 40px;
+    width: 250px;
+    height: 100px;
+    position: static;
+    border: none;
+}
+
+.btn:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover,
+.btn5:hover,
+.btn6:hover,
+.btn7:hover,
+.btn8:hover,
+.btn9:hover,
+.btn10:hover,
+.btn11:hover,
+.btn12:hover{
+    color: #000000;
+    background: linear-gradient(#e4a803,#FDD16E );
+    cursor: pointer;
+}
+
+.modal-info,
+.modal-info2,
+.modal-info3,
+.modal-info4,
+.modal-info5,
+.modal-info6,
+.modal-info7,
+.modal-info8,
+.modal-info9,
+.modal-info10,
+.modal-info11,
+.modal-info12{
+    width: 700px;
+    height: 200px;
+    background-color: #ffffff;
+    border: 1.5px solid #e4a803;
+    color: black;
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.modal-info p,
+.modal-info2 p,
+.modal-info3 p,
+.modal-info4 p,
+.modal-info5 p,
+.modal-info6 p,
+.modal-info7 p,
+.modal-info8 p,
+.modal-info9 p,
+.modal-info10 p,
+.modal-info11 p,
+.modal-info12 p{
+    width: 550px;
+    float: left;
+    padding: 20px;
+}
+
+.fechar,
+.fechar2,
+.fechar3,
+.fechar4,
+.fechar5,
+.fechar6,
+.fechar7,
+.fechar8,
+.fechar9,
+.fechar10,
+.fechar11,
+.fechar12{
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+}
+

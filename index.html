@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="content/Bootstrap/css/bootstrap.css">
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style/style.css">
+
+     <!--Card CSS-->
+     <link rel="stylesheet" href="style/card.css"> 
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+    <!--Normalize CSS-->
+    <link rel="stylesheet" type="text/css" href="style/normalize.css">
+
+    <!--Menu-->
+    <link rel="stylesheet" href="style/menu.css">
+
+    <!--Footer-->
+    <link rel="stylesheet" href="style/footer.css">
+
+    <title>Home - Etec de Vila Formosa</title>
+
+<style>
+
+</style>
+
+</head>
+<body class="no-js">
+<!--Início do Menu-->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="area-menu container-fluid"> 
+        <a id="go" href="index.html"><img id="go" src="imagens/logoevf.png" alt=""></a>  
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            
+            <div class="dropdown">
+              <li class="nav-item"><a class="nav-link" href="#">Cursos<img src="imagens/seta.png" class="icone"></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <!-- MultiLevel-MTEC Start-->
+                    <li class="dropdown dropend">
+                      <a class="dropdown-item dropdown-first-link" href="#">MTEC<img src="imagens/direita.png" class="icone"></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown-first-link" href="cursos/MTEC/ds.html">Desenvolvimento de Sistemas</a></li>  
+                            <div class="links">         
+                                <li><a class="dropdown-item" href="cursos/MTEC/rh.html">Recursos Humanos</a></li>
+                                <li><a class="dropdown-item" href="cursos/MTEC/meioambiente.html">Meio Ambiente</a></li>
+                                <li><a class="dropdown-item" href="cursos/MTEC/info.html">Informática</a></li>
+                                <li><a class="dropdown-item" href="cursos/MTEC/adm.html">Administração</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- MultiLevel-METEC End-->
+                    
+                    <!-- MultiLevel-EAD Start-->
+                    <li class="dropdown dropend">
+                    <a class="dropdown-item dropdown-first" href="#">EAD<img src="imagens/direita.png" class="icone"></a>
+                        <ul class="dropdown-menu">        
+                            <div class="sub-links"> 
+                                <li><a class="dropdown-item dropdown-first-sublink" href="cursos/EAD/comercioEAD.html">Comércio</a></li>     
+                                <li><a class="dropdown-item" href="cursos/EAD/gestProjetosEAD.html">Gestão De Projetos</a></li>
+                                <li><a class="dropdown-item" href="cursos/EAD/guiaTurismoEAD.html">Guia De Turismo</a></li>
+                                <li><a class="dropdown-item" href="cursos/EAD/secretariadoEAD.html">Secretariado</a></li>
+                                <li><a class="dropdown-item" href="cursos/EAD/transImobiEAD.html">Transações Imobiliárias</a></li>
+                                <li><a class="dropdown-item" href="cursos/EAD/admEAD.html">Administração</a></li>
+                                <li><a class="dropdown-item" href="cursos/EAD/dsEAD.html">Desenvolvimento de sistemas</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- MultiLevel-EAD End-->
+                </ul>
+              </li>
+            </div>
+
+            <!-- Início Modal -->
+            <li style="cursor: pointer">
+              <a id="myLink" class="menu-link">Fale Conosco</a>
+                <div id="myModal" class="modal menu-link">   
+                    <!-- Modal content -->
+                    <div class="modal-content menu-link">
+                        <span class="close">&times;</span>
+                        <form action="../../mensagens/inserir.php" enctype="multipart/form-data" method="post">
+                            <p>Nome:</p><br />
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /><br />
+                            <p>E-mail:</p><br />
+                            <input type="email" name="email" id="email" placeholder="Digite seu Email" /><br />
+                            <p>Assunto:</p><br />
+                            <input type="text" name="descricao" id="assunto" placeholder="Digite o assunto da mensagem" /><br />
+                            <p>Mensagem:</p> <br>
+                            <textarea name="mensagem" id="mensagem" cols="60" rows="5" placeholder="Digite sua mensagem"></textarea><br />
+                            <input type="submit" /><br />
+                        </form>
+                    </div>
+                </div>
+            </li>
+            <!-- Fim Modal -->
+
+            <li class="nav-item"><a class="nav-link" href="../../professores/pagprof.html">Nossos Professores</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://nsa.cps.sp.gov.br/">NSA</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../login/index.php">Login</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Fim do Menu-->
+
+  <!--Início Carousel-->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/imagem1.png" class="d-block w-100" alt="Escola">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/imagem4.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/imagem5.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Fim Carousel-->
+  <!--Início Main-->
+  <main>
+    <div class="container">
+      <div class="pricing-header p-3 pb-md-4 mx-auto">
+        <h1 class="display-4 fw-normal text-center">Bem vindo(a) a Etec de Vila Formosa</h1>
+        <p class="fs-5">A ETEC (Escola Técnica Estadual é um programa governamental que objetiva a formação de profissões de nível técnico. Logo, se você já terminou ou está terminando o ensino médio, ela surge como opção para buscar
+        melhores condições de vida) de Vila Formosa, iniciou suas atividades no primeiro semestre de 2008, com Ensino Médio e cursos técnicos. Desde lá possuímos um ensino de qualidade para o Ensino Médio e para as
+        modalidades de Curso Técnico Integrado, a cada ano adicionando cada vez mais cursos, tanto da modalidade de EAD (Remoto) e MTEC (Presencial).</p>
+        <p class="fs-5">Em 2019, as Escolas Técnicas Estaduais (Etecs) repetiram o ótimo desempenho no Exame Nacional do Ensino Médio (Enem), de acordo com os dados divulgados na pelo Instituto Nacional de Pesquisas Educacionais
+        Anísio Teixeira (Inep). A análise dos resultados mostra que, na Capital, a lista das 50 melhores públicas destaca 40 unidades do Centro Paula Souza (CPS). Entre as 60 melhores escolas públicas do Estado, 37 são
+        Etecs. Quando consideradas as 100 melhores escolas estaduais do Brasil, há 64 Etecs entre elas. Portanto dentre as 100 melhores a ETEC de Vila formosa se destaca na posição de número 38, com a média de 
+        na prova do ENEM.</p>
+        <p class="fs-5">A nossa ETEC oferece toda a estrutura necessária para o conforto e desenvolvimento educacional dos nossos alunos, como por exemplo: Internet, Banda Larga, Biblioteca, Quadra Esportiva, Laboratório de
+        Informática, Pátio Coberto, Sala do Professor e Alimentação. Assim na escola trabalham 26 profissionais incluindo professores, coordenação e todas as áreas da escola.</p>
+        <p class="fs-5">Nosso objetivo: “Ser reconhecido como um centro de excelência e referência em educação profissional de qualidade na região leste da cidade de São Paulo, respondendo às demandas do setor empresarial e da
+        comunidade, oferecendo condições aos jovens de inserção e manutenção no mercado de trabalho de forma efetiva e cidadã”.</p>
+      </div>
+    </div>
+
+  <!--Início Cards -->
+    <div class="card-area">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 my-5 justify-content-center">
+
+          <div class="col-md-2" style="width: 20rem;">
+            <div class="card">
+              <div class="img1"><img src="imagens/cursos/programador.jpg" alt=""></div>
+              <div class="main-text">
+                <span class="date">EaD/M-Tec</span></br></br>
+                <h2>Informática</h2>
+                <p>Aprenda a entender os hardwares,</br> montar computadores,</br> fazer manutenção.</p>
+                <a href="cursos/MTEC/info.html" class="link-card">Ler mais</a>
+              </div>
+              <div class="socials">
+                <li>2<p class="social-text">MODALIDADES</p></li>
+                <li class="middle">1000 <p class="social-text">HORAS/AULAS</p></li>
+                <li>7 <p class="social-text">HORAS/AULAS</p></li>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2"  style="width: 20rem;">
+            <div class="card">
+              <div class="img1"><img src="imagens/cursos/ma.jpg" alt=""></div>
+              <div class="main-text">
+                <span class="date">M-Tec</span></br></br>
+                <h2>Meio Ambiente</h2>
+                <p>Criar relatórios, desenvolver pesquisas, fazer novas descobertas, analisar dados ambientais e melhorar a natureza</p>
+                <a href="cursos/MTEC/meioambiente.html" class="link-card">Ler mais</a>
+              </div>
+              <div class="socials">
+                <li>1<p class="social-text">MODALIDADE</p></li>
+                <li class="middle">500 <p class="social-text">HORAS/AULAS</p></li>
+                <li>4 <p class="social-text">MATÉRIAS</p></li>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2"  style="width: 20rem;">
+            <div class="card">
+              <div class="img1"><img src="imagens/cursos/turismo.jpg" alt=""></div>
+              <div class="main-text">
+                <span class="date">EaD</span></br></br>
+                <h2>Guia de Turismo</h2>
+                <p>Conhecer novos lugares, criar roteiros de viagens, levar pessoas para aventuras e momentos Inesquecíveis.</p>
+                <a href="cursos/EAD/guiaTurismoEAD.html" class="link-card">Ler mais</a>
+              </div>
+              <div class="socials">
+                <li>1<p class="social-text">MODALIDADE</p></li>
+                <li class="middle">500 <p class="social-text">HORAS/AULAS</p></li>
+                <li>4 <p class="social-text">MATÉRIAS</p></li>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2"  style="width: 20rem;">
+            <div class="card">
+              <div class="img1"><img src="imagens/cursos/adm.jpg" alt=""></div>
+              <div class="main-text">
+                <span class="date">EaD/M-Tec</span></br></br>
+                <h2>Administração</h2>
+                <p>Administrar projetos, cuidar da contabilidade, gerenciar equipes, fazer estratégias de marketing</p>
+                <a href="cursos/MTEC/adm.html" class="link-card">Ler mais</a>
+              </div>
+              <div class="socials">
+                <li>2<p class="social-text">MODALIDADES</p></li>
+                <li class="middle">1000 <p class="social-text">HORAS/AULAS</p></li>
+                <li>9 <p class="social-text">MATÉRIAS</p></li>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2"  style="width: 20rem;">
+            <div class="card">
+              <div class="img1"><img src="imagens/cursos/comercio.jpg" alt=""></div>
+              <div class="main-text">
+                <span class="date">EaD</span></br></br>
+                <h2>Comércio</h2>
+                <p>Aprenda a negociar, fazer importações e exportações de produto</br>s internacionais</p>
+                <a href="cursos/EAD/comercioEAD.html" class="link-card">Ler mais</a>
+              </div>
+              <div class="socials">
+                <li>2 <p class="social-text">MODALIDADES</p></li>
+                <li class="middle">1000 <p class="social-text">HORAS/AULAS</p></li>
+                <li>9 <p class="social-text">MATÉRIAS</p></li>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <!--Fim Cards -->
+
+  <!--Início dos depoimentos-->   
+  <hr class="depoimentos">
+  <h1 class="display-4 fw-normal text-center">Mensagens dos Formandos</h1>
+
+  <div class="depoimentos container-fluid">
+  <div class="row">
+    <div class="col-lg-2">
+      <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="imagens/leo.png" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">
+      <p>“Derrotado não é quem passa horas</br>
+      estudando, mas quem percebe que</br>
+      desperdiçou seu tempo sem adquirir</br>
+      conhecimento.”</p>
+      <h4 class="fw-normal">Léo, Aluno da EVF</h2>
+    </div>
+    
+    <div class="col-lg-2">
+      <img class="bd-placeholder-img rounded-circle " width="200" height="200" src="imagens/bianca.png" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">
+      <p>“Para ganhar conhecimento, adicione</br>
+      coisas todos os dias. Para ganhar</br>
+      sabedoria, elimine coisas todos os </br>
+      dias.”</p>
+      <h4 class="fw-normal">Bianca, Aluna da EVF</h2>
+    </div>
+
+    <div class="col-lg-2">
+      <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="imagens/kaua.png" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">
+      <p>“Estudar é um direito, mas poucos</br>
+      possuem o privilégio de só fazer isso.</br>
+      Faça valer a pena e se dedique ao</br>
+      máximo!”</p>
+      <h4 class="fw-normal">Kauã, Aluno da EVF</h2>
+    </div>
+
+    <div class="col-lg-2">
+      <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="imagens/fusco.jpg" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">
+      <p>“Estudar abre portas que ultrapassam o</br>
+      conhecimento e trazem resultados que</br>
+      podemos ver e segurar com as nossas</br>
+      mãos.”</p>
+      <h4 class="fw-normal">Victor, Aluno da EVF</h2>
+    </div>
+
+    <div class="col-lg-2">
+      <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="imagens/math.jpg" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">
+      <p>“Um dos nossos maiores erros é nos</br>
+      compararmos com as outras pessoas.</br>
+      Faça o que você pode e procure</br>
+      melhorar sempre.”</p>
+      <h4 class="fw-normal">Matheus, Aluno da EVF</h2>
+    </div>
+
+    <div class="col-lg-2">
+      <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="imagens/free.png" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">
+      <p>“Falhar em uma prova não quer dizer</br>
+      que você não é capaz. levante-se ainda</br>
+      maior e estude mais para atingir seus</br>
+      objetivos.”</p>
+      <h4 class="fw-normal">Éric, Aluno da EVF</h2>
+    </div>
+  </div>
+</div>
+  <!--Fim dos depoimentos-->
+  <section class="galeria">
+    <div class="imagens-galeria">
+      <!-- LightWidget WIDGET -->
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+      <iframe src="//lightwidget.com/widgets/59f146259e655b0093844c6c752afba7.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%;border:0;overflow:hidden;"></iframe>
+    </div>
+  </section>
+<!--Fim da galeria-->
+
+  </main>
+
+
+  <!--Fim Main-->
+
+  <!--Início Footer-->
+  <div>
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-1 my-5">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <img src="imagens/logorodape.png" class="logo-rodape" style="width: 130px; height: 65px;">
+        </a>
+      </div>
+
+      <div class="col mb-2">
+        <h2>Biblioteca</h2>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><p>Segundas/Quartas/Sextas:8h às 17h</p></li>
+          <li class="nav-item mb-2"><p>Terças/Quintas:12h às 21h</p></li>
+        </ul>
+      </div>
+
+      <div class="col mb-2">
+        <h2>Secretaria</h2>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><p>De segunda a sexta:</p></li>
+          <li class="nav-item mb-2"><p>Manhã 9:30h às 12h</p></li>
+          <li class="nav-item mb-2"><p>Tarde: 14h às 16h</p></li>
+          <li class="nav-item mb-2"><p>Noite: 18h às 20h</p></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-2">
+        <h2>Etec Vila de Formosa</h2>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><p>Jardim Vila Formosa - <p>São Paulo Rua Bactória, 38</p></li>
+        </ul>
+      </div>
+      
+      <div class="redes mb-2">
+        <ul class="redes">
+                <a href="https://www.facebook.com/etecdevilaformosaevf/" target="_blank">
+            <li class="nav-item mb-2"><i class="fab fa-facebook-f"></i></li></a>
+                <a href="https://twitter.com/etecvf" target="_blank">
+            <li class="nav-item mb-2"><i class="fab fa-twitter"></i></li></a>
+                <a href="https://www.instagram.com/etec_vilaformosa/" target="_blank">   
+            <li class="nav-item mb-2"><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.youtube.com/channel/UCJdKGvtOzDmdf5qhX6I7f1Q" target="_blank">  
+            <li class="nav-item mb-2"><i class="fab fa-youtube"></i></li><a>
+        </ul>
+      </div>
+    </footer>
+    <p class="address">&copy; Desenvolvido por EVF 2022</p>
+  </div>
+  <!--Fim Footer-->
+    <script src="/content/Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

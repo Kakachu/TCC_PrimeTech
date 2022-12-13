@@ -1,0 +1,77 @@
+/*inicio da fomat pagina professores*/
+
+.text-prof{
+    font-size: 18px;
+    margin-top: 45px;
+    font-family: 'Source Sans Pro';
+    margin-bottom: 35px;
+    color: whitesmoke;
+
+}
+
+.tit-prof {
+    color: whitesmoke;
+    font-size: 35px;
+    margin-top: 35px;
+    font-family: "Arial", Helvetica, sans-serif;
+
+
+
+}
+
+#menu-prof ul {
+    list-style-type: none;
+    width: 502px;
+    height: 990px;
+    background: #e4a803 no-repeat left bottom;
+    position: fixed;
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border: 2px solid black
+
+
+}
+
+#container-conteudo-prof {
+    margin-right: 160px;
+    margin-top: 20px;
+    width: 858px;
+    height: 950px;
+    float: right;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.subtit {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5px;
+    font-size: 42px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+.text-container {
+    font-size: 32px;
+    margin-top: 55px;
+    margin-left: 25px;
+}
+
+.text-rel {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.icone-prof {
+    width: 120px;
+    height: 110px;
+}
+
+.icone-prof img:hover {
+    transform: scale(0.850);
+    transition: 0.5s;
+
+}
+
+/*Fim da format da area professores*/
